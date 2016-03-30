@@ -1,0 +1,11 @@
+<div class="help-block"
+data-ng-show="field.$touched">
+<span
+data-ng-show="field.$invalid">
+Please enter a valid {{field.$name|case}}.
+</span>
+<span
+data-ng-show="field.$error.required">
+  {{field.$name|case}} is required.
+</span>
+</div>

@@ -1,0 +1,5 @@
+{
+  "base": "http://localhost:49567",
+  "serviceTypes":"/api/service-types",
+  "assistanceRequests":"/api/assistance-requests"
+}
