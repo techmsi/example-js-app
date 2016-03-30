@@ -1,0 +1,38 @@
+{
+  "name": "example-js-app",
+  "version": "0.0.1",
+  "description": "Javascript example app (angular)",
+  "localModulesPath": "./node_modules/.bin",
+  "scripts": {
+    "prestart": "npm run bundle",
+    "profile": "$npm_package_localModulesPath/webpack --profile --json > stats.json",
+    "devserver": "$npm_package_localModulesPath/webpack-dev-server",
+    "start": "$npm_package_localModulesPath/nodemon app-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "$npm_package_localModulesPath/webpack"
+  },
+  "author": "techmsi",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.2",
+    "angular-route": "^1.5.2",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.2",
+    "lodash.startcase": "^4.1.0",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "babel-core": "^6.7.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.6.0",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.8.5",
+    "html-loader": "^0.4.3",
+    "imports-loader": "^0.6.5",
+    "json-loader": "^0.5.4",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7"
+  }
+}
